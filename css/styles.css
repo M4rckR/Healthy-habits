@@ -1,0 +1,94 @@
+/* Variables */
+:root {
+    --font-family : 'Raleway', sans-serif;
+    --f-400 : 400;
+    --f-600 : 600;
+    --f-700 : 700;
+    --f-900 : 900;
+    /* Colores */
+    --principal: #303030;
+    --emphasis: #AD3326;
+    --white: #FFFFFF;
+    --black-light: #101010;
+    --black: #000000;
+    --secundary: #1C3843;
+    --secundary-light: #CBDBCA;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-family);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+
+.contenedor {
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.header__nav {
+    background-color: var(--principal);
+    padding: 2rem 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: var(--f-900);
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.header__icon {
+    color: var(--white);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.header__menu {
+    display: none;
+}
