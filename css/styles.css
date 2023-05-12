@@ -35,7 +35,6 @@ body {
 a {
     display: block;
     text-decoration: none;
-    color: black;
 }
 
 img {
@@ -60,6 +59,9 @@ h3 {
     font-size: 3rem;
 }
 
+
+/* Utilidades */
+
 .text--emphasis {
     background-color: var(--emphasis);
     padding: 1rem 2rem;
@@ -70,16 +72,19 @@ h3 {
 }
 
 
+
+
 .contenedor {
     width: 80%;
     max-width: 120rem;
     margin: 0 auto;
 }
 
+/* Header */
+
 @media (min-width:768px ){
     .contenedor {
         width: 90%;
-        max-width: 140rem;
         margin: 0 auto;
     }
 }
@@ -620,3 +625,350 @@ h3 {
 }
 
 
+/* NO MOVER DE AQUI */
+.header__list .selected {
+    color: #AD3326;
+}
+/* -------------------- */
+
+
+.header__hero--nosotros {
+    background-image: url(../assets/hero/hero__nosotros.webp);
+}
+
+.header__hero--nosotros .hero{
+    justify-content: start;
+}
+
+.hero__text .hero__description {
+    font-size: 1.8rem;
+}
+
+@media (min-width:768px ){
+    .hero__text .hero__description {
+        font-size: 2.4rem;
+    }
+    
+}
+
+
+.hero__text .hero__title {
+    font-size: 3.8rem;
+}
+
+@media (min-width:768px ){
+    .hero__text .hero__title {
+        font-size: 5rem;
+    }
+}
+
+
+.hero__text .hero__paragraph{
+    font-size: 2rem;
+    font-weight: var(--f-600);
+}
+
+/* Demostracion */
+
+.demostracion__title {
+    font-size: 2.4rem;
+    color: var(--white);
+    font-weight: var(--f-600);
+    margin-bottom: 4rem;
+}
+
+@media (min-width:1024px ){
+    .demostracion__title {
+        font-size: 4rem;
+    }
+}
+
+.demostracion__paragraph {
+    color: #ffffff89;
+}
+
+.demostracion {
+    background-color: var(--principal);
+    padding: .1px;
+}
+
+
+
+.demostracion__contenedor  {
+    padding: 10rem 0;
+}
+
+
+.demostracion__video {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:1024px ){
+    .demostracion__video {
+        margin-top: 4rem;
+    }
+}
+
+.demostracion__video div{
+    background-color: #CBDBCA;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Funcionamiento */
+
+.funcionamiento {
+    background-color: var(--secundary-light);
+    padding: 10rem 0;
+}
+
+.funcionamiento__title {
+    text-align: center;
+}
+
+.pilares__title {
+    font-size: 2.4rem;
+}
+
+@media (min-width:768px ){
+    .pilares {
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 10rem;
+    }
+}
+
+.pilares__paragraph {
+    text-align: justify;
+}
+
+.pilares__img {
+    display: flex;
+    justify-content: center;
+}
+
+.pilares__img img {
+    max-width: 30rem;
+}
+
+/* Mision */
+
+.mision {
+    background-color: var(--principal);
+    padding: 10rem 0;
+}
+
+.compromiso {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+@media (min-width:1024px ){
+    .compromiso {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
+
+.compromiso__img {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:1024px ){
+    .compromiso__img {
+        display: block;
+    }
+}
+
+
+.compromiso__img img {
+    width: 100%;
+    max-width: 40rem;
+}
+
+.comprimiso__text  {
+    color: var(--white)
+}
+
+.compromiso__paragraph {
+    color: #ffffff89;
+}
+
+.compromiso__paragraph {
+    text-align: justify;
+}
+
+.hechos__container {
+    padding: 4rem 0;
+}
+
+@media (min-width:768px ){
+    .hechos__container {
+        padding: 10rem 0;
+    }
+}
+
+@media (min-width:768px ){
+    .hechos__title {
+        font-size: 6rem;
+    }
+}
+
+.hechos {
+    color: var(--white);
+}
+
+.hechos__description {
+    color: #ffffff89;
+}
+
+.hechos__item p:first-child {
+    font-weight: var(--f-700);
+}
+
+.hechos__item p:last-child {
+    color: #ffffff86;
+}
+
+@media (min-width:1024px ){
+    .hechos__grid {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 6rem;
+    }
+}
+
+
+
+/* Historia */
+.historia {
+    background-color: var(--secundary);
+    padding: 10rem 0;
+}
+
+.testimonio__texto {
+    color: #ffffff86;
+}
+
+.testimonio__cita {
+    color: var(--white);
+    font-weight: var(--f-700);
+}
+
+@media (min-width:1024px ){
+    .testimonio__cita {
+        font-size: 2.8rem;
+    }
+}
+
+
+.line__white {
+    height: 1px;
+    background-color: var(--white);
+}
+
+.line__box {
+    padding: 4rem 0;
+}
+
+.historia__resumen {
+    color: var(--white);
+}
+
+.historia__completa, .historia__paragraph {
+    color: #ffffff86;
+}
+
+@media (min-width:1024px ){
+    .historia__completa {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
+
+
+.historia__resumen {
+    padding: 4rem 0;
+}
+
+@media (min-width:1024px ){
+    .historia__texto p:first-child {
+        margin-bottom: 4rem;
+    }
+}
+
+
+.historia__img {
+    padding: 4rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:1024px ){
+    .historia__title {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:1024px ){
+    .historia__img {
+        padding: 0;
+    }
+}
+
+@media (min-width:1024px ){
+    .historia__img {
+        justify-content: end;
+    }
+}
+
+.historia__img img {
+    max-width: 40rem;
+}
+
+/* Interrogante */
+
+.interrogante {
+    background-color: var(--secundary-light);
+    padding: 15rem 0;
+}
+
+.interrogante__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.interrogante__contenedor h3 {
+    font-weight: var(--f-400);
+}
+
+.interrogante__contenedor a {
+    width: auto;
+    background-color: var(--emphasis);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 2.8rem;
+}
+
+.interrogante__contenedor h3,
+.interrogante__contenedor a{
+    text-align: center;
+}
+
+@media (min-width:768px ){
+    .interrogante__contenedor h3 {
+        font-size: 5rem;
+    }
+}
