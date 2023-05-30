@@ -610,13 +610,27 @@ h3 {
     color: var(--white);
 }
 
-.login__form input:last-child {
+.login__form>input:last-child {
     border: none;
     background-color: var(--emphasis);
     color: var(--white);
     font-weight: var(--f-700);
     font-size: 2rem;
+    cursor: pointer;
 }
+
+.login__password {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.login__password input {
+    flex: 1;
+}
+
+
+
 
 
 
@@ -624,6 +638,11 @@ h3 {
     margin-top: 1rem;
     color: var(--emphasis);
     text-decoration: underline;
+}
+
+.login__issue {
+    display: flex;
+    justify-content: space-between;
 }
 
 
