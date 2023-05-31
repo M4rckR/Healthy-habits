@@ -1,0 +1,18 @@
+/* Variables */
+:root {
+    --font-family : 'Raleway', sans-serif;
+    --f-400 : 400;
+    --f-600 : 600;
+    --f-700 : 700;
+    --f-900 : 900;
+    /* Colores */
+    --principal: #303030;
+    --emphasis: #AD3326;
+    --white: #FFFFFF;
+    --black-light: #121212;
+    --black: #000000;
+    --secundary: #1C3843;
+    --secundary-light: #CBDBCA;
+    --parrafo: #a1a1a1;
+}
+

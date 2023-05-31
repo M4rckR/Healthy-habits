@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,*:before,*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 1.6rem;
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    position: relative;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+
+/* Utilidades */
+
+.contenedor {
+    width: 80%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header */
+
+@media (min-width:768px ){
+    .contenedor {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
