@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BronaelFit - Home</title>
+    <title>Recuperar contraseña</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/icons/dieta.png">
-    <link rel="stylesheet" href="css/internas/registro.css">
+    <link rel="stylesheet" href="css/internas/recuperar_contraseña.css">
 </head>
 <body>
     
@@ -28,16 +28,19 @@
         <div class="login">
             <div class="login__container contenedor">
                 <div class="login__title">
-                    <h3>Informacion de la cuenta</h3>
+                    <h3>Recupera tu cuenta</h3>
                 </div>
-                <form class="login__form">
-                    <input type="email" placeholder="Correo electronico" required>
-                    <input type="password" placeholder="Contraseña" required>
-                    <input type="submit" value="Iniciar sesion">
+                <form class="login__form login__recuperar">
+                    <input id="correo__linea" type="email" placeholder="Correo electronico" required>
+                    <input id="enviar__correo" type="submit" value="Recibir codigo">
                 </form>
+                <div class="confirmacion__correo hidden__correo">
+                    <p>Excelente, si su email se encuentra registrado con nosostros recibira un correo con las instrucciones para recuperar su cuenta</p>
+                    <i class="bi bi-patch-check"></i>
+                </div>
+                
                 <div class="login__issue">
-                    <a href="recuperar_contraseña.html">Olvide la contraseña</a>
-                    <a href="registro.html">Crear cuenta</a>
+                    <a href="login.html">Regresar al login</a>
                 </div>
             </div>
         </div>
