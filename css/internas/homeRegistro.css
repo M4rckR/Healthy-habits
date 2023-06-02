@@ -1,0 +1,268 @@
+@import '../normalize.css';
+@import '../variables.css';
+@import '../base.css';
+
+
+.header__nav {
+    background-color: var(--black);
+    padding: 2rem 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    font-weight: var(--f-900);
+    color: var(--white);
+    font-size: 2.4rem;
+}
+
+.header__icon {
+    color: var(--white);
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.cerrar--menu {
+    color: var(--white);
+    font-size: 2.5rem;  
+}
+
+.header__menu {
+    background-color: var(--principal);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    padding: 2.5rem 2rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 2.5rem;
+    text-align: end;
+    
+}
+
+@media (min-width:768px ){
+    .header__menu {
+        padding: 0;
+        position: relative;
+        text-align: start;
+    }
+
+    .header__menu--hidden {
+    opacity: 0;
+    visibility: hidden;
+    }
+}
+
+.header__menu--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.header__menu>a {
+    text-align: end;
+    background-color: var(--white);
+    padding: .75rem 1rem;
+    border-radius: 1rem;
+}
+
+.header__list  {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 600;
+}
+
+.hero__text {
+    padding: 0 1rem;
+}
+
+@media (min-width:768px ){
+    .header__list {
+        flex-direction: row;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .text--emphasis {
+        background-color: var(--emphasis);
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+    }
+}
+
+.header__list a {
+    color: var(--white);
+    
+}
+
+@media (min-width:768px ){
+    .header__content>i{
+        display: none;
+    }
+
+    .cerrar--menu {
+        display: none;
+    }
+}
+
+/* Main */
+.main {
+    background-color: var(--principal);
+    padding: .1px;
+}
+
+
+.main__container {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width:1024px ){
+    .nuevoInicio {
+        width: 50%;
+    }
+}
+
+.nuevoInicio__title , .nuevoInicio__paragraph {
+    color: var(--white);
+}
+
+.form--adicional {
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+@media (min-width:1024px ){
+    .form--adicional {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        color: var(--white);
+    }
+}
+
+
+.fomr--sexo {
+    display: flex;
+    gap: 2rem;
+    padding-left: 1rem;
+}
+
+.fomr--sexo legend {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form--adicional input {
+    padding: 1.4rem;
+    border-radius: .8rem;
+}
+
+.form--adicional input,.form--adicional textarea {
+    display: block;
+    outline: none;
+    background-color: var(--black);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.form--adicional textarea {
+    width: 100%;
+    resize: none;
+    padding: 1.4rem;
+    border-radius: .8rem;
+}
+
+.antecedentes--medicos {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media (min-width:1024px ){
+    .antecedentes--medicos {
+        grid-column: 1/-1;
+    }
+}
+
+.datos--adicionales {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    background-color: var(--emphasis);
+    outline: none;
+    border: none;
+    color: white;
+    width: 100%;
+    border-radius: .8rem;
+}
+
+@media (min-width:1024px ){
+    .datos--adicionales {
+        margin-top: 2rem;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secundary);
+    padding: 4rem 0;
+}
+
+.opciones__title h4 {
+    color: var(--white);
+}
+
+.opciones__list a{
+    color: #ffffff89;
+}
+
+.footer__iconos {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem 0;
+}
+
+.footer__iconos a img {
+    width: 2.8rem;
+}
+
+.footer__description p{
+    color: #ffffff89;
+}
+
+.footer__links a{
+    color: #ffffff89;
+    display: inline-block;
+}
+
+@media (min-width:768px ){
+    .footer__opciones {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1024px ){
+    .footer__description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+

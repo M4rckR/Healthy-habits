@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/icons/dieta.png">
-    <link rel="stylesheet" href="css/internas/registro.css">
+    <link rel="stylesheet" href="css/internas/homeRegistro.css">
 </head>
 <body>
     
@@ -20,36 +20,34 @@
                 <a href="index.html"><h1 class="header__title">BRONAELFIT</h1></a>
             </div>
         </div>
-
-        
     </header>
 
     <main class="main">
-        <div class="login">
-            <div class="login__container contenedor">
-                <div class="login__title">
-                    <h3>Unete a nosotros</h3>
-                </div>
-                <form class="login__form">
-                    <input type="text" placeholder="Tus nombres" required>
-                    <input type="text" placeholder="Tus apellidos" required>
-                    <input type="email" placeholder="Tu mejor correo" required>
-                    <div class="login__password">
-                        <input type="password" placeholder="Contraseña" required>
-                        <input type="password" placeholder="Repite la contraseña" required>
+        <div class="main__container contenedor">
+            <section class="nuevoInicio">
+                <h2 class="nuevoInicio__title">Bienvenido a Bronaelfit</h2>
+                <p class="nuevoInicio__paragraph">Necesitaremos algunos datos adicionales para poder continuar</p>
+                <form class="form--adicional">
+                    <input type="number" placeholder="Edad">
+                    <input type="number" placeholder="Talla en cm">
+                    <input type="number" placeholder="Peso en Kg">
+                    <div class="fomr--sexo">
+                        <legend>
+                            <label for="">Hombre</label>
+                            <input type="radio" name="genero">
+                        </legend>
+                        <legend>
+                            <label for="">Mujer</label>
+                            <input type="radio" name="genero">
+                        </legend>
                     </div>
-                    <div class="login__condiciones">
-                        <input type="checkbox" required>
-                        <label for="">
-                            <a href="#">Acepto los terminos y condiciones</a>
-                        </label>
-                    </div>
-                    <input type="submit" value="Registrate">
-                </form>
-                <div class="login__issue">
-                    <a href="login.html">Regresar inicio de sesion</a>
-                </div>
-            </div>
+                    <legend class="antecedentes--medicos">
+                        <label for="">Indicar aqui y detallar si tienes antecedentes médicos relevantes, alergias, condiciones de salud existentes.</label>
+                        <textarea cols="30" rows="10"></textarea>
+                    </legend>
+                </form> 
+                <input class="datos--adicionales" type="submit" value="Continuar">
+            </section>
         </div>
     </main>
 
@@ -95,7 +93,7 @@
             </div>
 
             <div class="footer__iconos">
-                <a href="#"><img src="assets/redes/facebook.png" alt="facebook"></a>
+                <a href="#"><img src=".assets/redes/facebook.png" alt="facebook"></a>
                 <a href="#"><img src="assets/redes/instagram.png" alt="instagram"></a>
                 <a href="#"><img src="assets/redes/twitter.png" alt="twiter"></a>
             </div>
