@@ -5,6 +5,19 @@ let confirmacionCorreo = document.querySelector('.confirmacion__correo')
 let enviarCorreo = document.querySelector('#enviar__correo')
 let correoLinea = document.querySelector('#correo__linea')
 let loginRecuperar = document.querySelector('.login__recuperar')
+let saludo = document.querySelector('#saludo')
+
+
+
+let fecha = new Date();
+let hours = fecha.getHours();
+
+const textoSaludo = () => {
+    return (hours>11) && (hours<19)? "Buenas tardes":
+            ((hours>=19) && (hours<=24)) || ((hours>=1) && (hours<=4))? "Buenas noches": "Buenos dias"  
+}
+
+saludo.textContent = textoSaludo();
 
 
 enviarCorreo.addEventListener('click', (event) => {
@@ -18,21 +31,19 @@ enviarCorreo.addEventListener('click', (event) => {
         confirmacionCorreo.classList.toggle('hidden__correo');
         loginRecuperar.classList.toggle('hidden__correo')
     }
-
-
 })
 
 
 
 // Agregar evento para cerrar el menú al hacer clic en el botón X
 cerrarMenu.addEventListener('click', () => {
-    menuNav.classList.toggle('header__menu--hidden')
-})
+    menuNav.classList.add('header__menu--hidden');
+});
 
 // Agregar evento para abrir el menú al hacer clic en el botón de menú
 abrirMenu.addEventListener('click', () => {
-    menuNav.classList.remove('header__menu--hidden');
-})
+    menuNav.classList.toggle('header__menu--hidden');
+});
 
 // Verificar el tamaño de pantalla al cargar y al cambiar de tamaño
 function verificarTamanoPantalla() {
