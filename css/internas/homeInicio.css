@@ -3,125 +3,84 @@
 @import '../base.css';
 
 
-.header__nav {
-    background-color: var(--principal);
-    padding: 2rem 0;
-}
-
 .header__content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+.header__nav {
+    background-color: #303030;
+}
+
+
 .header__title {
+    text-align: center;
+    color: var(--white);
     font-weight: var(--f-900);
-    color: var(--white);
-    font-size: 2.4rem;
-}
-
-.header__icon {
-    color: var(--white);
-    font-size: 2.4rem;
-    cursor: pointer;
-}
-
-.cerrar--menu {
-    color: var(--white);
-    font-size: 2.5rem;  
-}
-
-.header__menu {
-    background-color: var(--principal);
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 60%;
-    padding: 2.5rem 2rem;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 2.5rem;
-    text-align: end;
-    
 }
 
 @media (min-width:768px ){
-    .header__menu {
-        padding: 0;
-        position: relative;
-        text-align: start;
-    }
-
-    .header__menu--hidden {
-    opacity: 0;
-    visibility: hidden;
+    .header__title {
+        font-size: 2.8rem;
     }
 }
 
 
-
-.header__menu>a {
-    text-align: end;
-    background-color: var(--white);
-    padding: .75rem 1rem;
-    border-radius: 1rem;
-}
-
-.header__list  {
+.header__content {
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-weight: 600;
 }
 
-.hero__text {
-    padding: 0 1rem;
+@media (min-width:768px ){
+    .header__content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
+
+.header__menu{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.header__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+}
+
+.header__list a {
+    color:var(--white);
+    font-weight: var(--f-700);
+}
+
+
 
 @media (min-width:768px ){
     .header__list {
         flex-direction: row;
-        gap: 4rem;
         align-items: center;
-    }
-
-    .text--emphasis {
-        background-color: var(--emphasis);
-        padding: 1rem 2rem;
-        border-radius: 1rem;
+        gap: 4rem;
     }
 }
 
-.header__list a {
-    color: var(--white);
-    
-}
-
-@media (min-width:768px ){
-    .header__content>i{
-        display: none;
-    }
-
-    .cerrar--menu {
-        display: none;
-    }
-}
 
 .header__foto {
     width: 5rem;
-    align-self: flex-end;
+    align-self: center;
 }
 
 .header__foto img{
     border-radius: 50%;
 }
 
-.header__menu--hidden {
-    background-color: var(--secundary);
-    padding: 4rem 0;
-}
+
+
+
 
 .opciones__title h4 {
     color: var(--white);
