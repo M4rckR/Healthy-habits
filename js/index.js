@@ -58,6 +58,10 @@ verificarTamanoPantalla();
 
 window.addEventListener('resize', () => {
     verificarTamanoPantalla();
+    
 })
 
-
+const titulo = document.getElementById('enviar__correo')
+titulo.addEventListener('click', () => {
+    titulo.value = "Hola"
+})
